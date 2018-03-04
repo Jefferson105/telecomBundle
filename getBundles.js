@@ -85,7 +85,7 @@ const getPossibilities = (node) => {
 };
 
 const nodePlans = () => {
-    var bundlesPossibles = allPossibilities();
+    var bundlesPossibles = getPossibilities();
 
     // Sort possibilities by price
     bundlesPossibles = bundlesPossibles.sort((a, b) => a.price - b.price );
