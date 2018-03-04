@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F2F2F2;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.plans-list {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+        margin-top: 1rem;
+        width: 24%;
+        height: 10rem;
+        //text-align: center;
+        box-shadow: 0 0 2px 2px #EEE;
+        background-color: #FFF;
+        position: relative;
+        padding: 1rem;
+        box-sizing: border-box;
+        &-title {
+            font-size: 1.2rem;
+        }
+        &-plan {
+            color: #B46954;
+        }
+        &-price {
+            position: absolute;
+            font-size: 1.5rem;
+            bottom: .5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #4C8F5A;
+        }
+    }
+}

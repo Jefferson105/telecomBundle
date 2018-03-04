@@ -1,0 +1,108 @@
+{
+    "nodes": {
+        "node0": {
+            "name": "AddonBB",
+            "type": "addon",
+            "value": 10,
+            "standAlone": false
+        },
+        "node1": {
+            "name": "AddonTV",
+            "type": "addon",
+            "value": 0,
+            "standAlone": false
+        },
+        "node2": {
+            "name": "Broadband1",
+            "type": "bb",
+            "value": 40,
+            "standAlone": true
+        },
+        "node3": {
+            "name": "Broadband2",
+            "type": "bb",
+            "value": 60,
+            "standAlone": true
+        },
+        "node4": {
+            "name": "TV1",
+            "type": "tv",
+            "value": 50,
+            "standAlone": true
+        },
+        "node5": {
+            "name": "TV2",
+            "type": "bb",
+            "value": 120,
+            "standAlone": true
+        },
+        "node6": {
+            "name": "Landline",
+            "type": "ll",
+            "value": 35,
+            "standAlone": false
+        }
+    },
+    "edges": [
+        {
+            "id": "edge0",
+            "start": "node2",
+            "end": "node0",
+            "val": 0
+        },
+        {
+            "id": "edge1",
+            "start": "node2",
+            "end": "node6",
+            "val": -40
+        },
+        {
+            "id": "edge2",
+            "start": "node3",
+            "end": "node0",
+            "val": -10
+        },
+        {
+            "id": "edge3",
+            "start": "node3",
+            "end": "node4",
+            "val": -10
+        },
+        {
+            "id": "edge4",
+            "start": "node3",
+            "end": "node5",
+            "val": -20
+        },
+        {
+            "id": "edge5",
+            "start": "node3",
+            "end": "node6",
+            "val": -40
+        },
+        {
+            "id": "edge6",
+            "start": "node4",
+            "end": "node1",
+            "val": 35
+        },
+        {
+            "id": "edge7",
+            "start": "node4",
+            "end": "node6",
+            "val": -10
+        },
+        {
+            "id": "edge8",
+            "start": "node5",
+            "end": "node1",
+            "val": 15
+        },
+        {
+            "id": "edge9",
+            "start": "node5",
+            "end": "node6",
+            "val": -30
+        }
+    ]
+}
